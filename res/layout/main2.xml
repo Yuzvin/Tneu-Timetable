@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/myColor">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Викладач:"
+            android:id="@+id/textView1" android:layout_gravity="left|center_vertical"
+            android:textColor="@android:color/black"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnrTeachers" android:layout_gravity="left|center_vertical"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оберіть групу:"
+            android:id="@+id/textView2" android:layout_gravity="left|center_vertical"
+            android:textColor="@android:color/black"/>
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnrGroups" android:layout_gravity="left|center_vertical"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Список"
+            android:id="@+id/textView" android:layout_gravity="center" android:textColor="@android:color/black"
+            android:layout_marginBottom="6dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+        <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1.7"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:text="Тижд."
+                />
+
+        <View android:layout_height="fill_parent" android:layout_width="2px" android:background="#000000"/>
+
+        <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1.5"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:text="День"
+                />
+
+        <View android:layout_height="fill_parent" android:layout_width="2px" android:background="#000000"/>
+
+        <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="2.5"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:text="Час"
+                />
+
+        <View android:layout_height="fill_parent" android:layout_width="2px" android:background="#000000"/>
+
+        <TextView
+                    android:id="@+id/teacherOrStudent"
+                  android:layout_width="0dp"
+                  android:layout_weight="3.4"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:text="Викл."
+                />
+
+        <View android:layout_height="fill_parent" android:layout_width="2px" android:background="#000000"/>
+
+        <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="6"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:text="Дисципліна"
+                />
+
+        <View android:layout_height="fill_parent" android:layout_width="2px" android:background="#000000"/>
+
+        <TextView
+                  android:layout_width="0dp"
+                  android:layout_weight="1.8"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/black"
+                  android:text="Ауд."
+                />
+
+    </LinearLayout>
+
+
+    <ListView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/listLessons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textFilterEnabled="false" />
+
+    <HorizontalScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/horizontalScroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+
+
+
+    </HorizontalScrollView>
+</LinearLayout>
+
+
